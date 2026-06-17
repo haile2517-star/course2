@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về nhà của tôi</title>
+    <!-- Đảm bảo tệp CSS được liên kết chính xác -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Liên kết "Chuyển đến Nội dung chính" đang hoạt động -->
+    <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+
+    <header>
+        <nav>
+            <!-- Hình ảnh trong điều hướng -->
+            <img src="logo.jpg" alt="Logo trang web">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="page2.html">Trang 2</a></li>
+                <li><a href="page3.html">Trang 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Thêm id="main" vào thẻ main để neo liên kết hoạt động -->
+    <main id="main">
+        <h1>Nội dung chính của trang</h1>
+
+        <h2>Phần Lưới (Grid Class)</h2>
+        <div class="grid">
+            <!-- Các phần tử bên trong lưới -->
+            <div>
+                <img src="grid-img1.jpg" alt="Ảnh lưới 1">
+                <p>Mô tả ảnh 1</p>
+            </div>
+            <div>
+                <img src="grid-img2.jpg" alt="Ảnh lưới 2">
+                <p>Mô tả ảnh 2</p>
+            </div>
+            <div>
+                <img src="grid-img3.jpg" alt="Ảnh lưới 3">
+                <p>Mô tả ảnh 3</p>
+            </div>
+            <div>
+                <img src="grid-img4.jpg" alt="Ảnh lưới 4">
+                <p>Mô tả ảnh 4</p>
+            </div>
+        </div>
+
+        <h2>Phần Linh hoạt (Flex Class)</h2>
+        <div class="flex">
+            <!-- Hình ảnh trong phần flex sẽ không bị ảnh hưởng bởi CSS của grid -->
+            <img src="flex-img1.jpg" alt="Ảnh flex 1">
+            <img src="flex-img2.jpg" alt="Ảnh flex 2">
+            <img src="flex-img3.jpg" alt="Ảnh flex 3">
+        </div>
+    </main>
+
+</body>
+</html>
