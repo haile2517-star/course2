@@ -1,0 +1,92 @@
+/* =========================================
+   Sửa lỗi Tương phản màu sắc cho công cụ WAVE 
+   ========================================= */
+body {
+    background-color: #ffffff; /* Nền trắng */
+    color: #000000;            /* Chữ đen đảm bảo độ tương phản tối đa */
+    font-family: Arial, sans-serif;
+}
+
+/* =========================================
+   Liên kết "Chuyển đến Nội dung chính" 
+   ========================================= */
+.skip-link {
+    position: absolute;
+    left: -10000px; /* Ẩn liên kết khỏi màn hình mặc định */
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 999;
+}
+
+.skip-link:focus {
+    /* Hiển thị khi người dùng sử dụng phím Tab */
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/* =========================================
+   Phần Điều hướng (Nav)
+   ========================================= */
+
+/* Nhận xét kiểu dáng hiện có cho phần tử li theo yêu cầu */
+/*
+li {
+    display: inline;
+}
+*/
+
+/* Thay đổi phần tử nav */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* Sử dụng bộ chọn hậu duệ để tạo kiểu cho hình ảnh trong điều hướng */
+nav img {
+    width: 10%;
+}
+
+/* =========================================
+   Tạo kiểu Lớp Lưới (.grid)
+   ========================================= */
+
+/* Sử dụng dấu chấm cho lớp, lưới hai cột (khoảng 40%) */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    
+    /* Chơi với các giá trị để sao chép ảnh chụp màn hình (bạn có thể thay đổi các giá trị này) */
+    justify-content: space-evenly; 
+    align-items: center;           
+    row-gap: 30px;                 
+}
+
+/* Bộ chọn hậu duệ: Chỉ tạo kiểu hình ảnh trong lớp lưới */
+.grid img {
+    width: 100%;
+}
+
+/* =========================================
+   Tạo kiểu Lớp Flex (.flex)
+   ========================================= */
+
+.flex {
+    display: flex;
+    
+    /* Chơi với các giá trị flex-wrap và justify-content */
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+/* Định dạng phụ để hình ảnh flex hiển thị đẹp hơn (Không bắt buộc) */
+.flex img {
+    width: 30%;
+    margin: 10px;
+}
