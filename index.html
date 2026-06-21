@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài tập về nhà của tôi</title>
-    <!-- Đảm bảo tệp CSS được liên kết chính xác -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Web Mẫu Chuẩn CSS & Accessibility</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Liên kết "Chuyển đến Nội dung chính" đang hoạt động -->
-    <a href="#main" class="skip-link">Chuyển đến Nội dung chính</a>
+  <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
 
-    <header>
-        <nav>
-            <!-- Hình ảnh trong điều hướng -->
-            <img src="logo.jpg" alt="Logo trang web">
-            <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="page2.html">Trang 2</a></li>
-                <li><a href="page3.html">Trang 3</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">WebStandard</div>
+      <nav aria-label="Menu chính">
+        <ul class="nav-links">
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Dịch vụ</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Thêm id="main" vào thẻ main để neo liên kết hoạt động -->
-    <main id="main">
-        <h1>Nội dung chính của trang</h1>
+  <main id="main-content">
+    
+    <section class="features-section">
+      <div class="section-title">
+        <h2>Kỹ năng cốt lõi</h2>
+        <p>Các kiến thức nâng cao giúp tối ưu hóa giao diện trang web.</p>
+      </div>
 
-        <h2>Phần Lưới (Grid Class)</h2>
-        <div class="grid">
-            <!-- Các phần tử bên trong lưới -->
-            <div>
-                <img src="grid-img1.jpg" alt="Ảnh lưới 1">
-                <p>Mô tả ảnh 1</p>
-            </div>
-            <div>
-                <img src="grid-img2.jpg" alt="Ảnh lưới 2">
-                <p>Mô tả ảnh 2</p>
-            </div>
-            <div>
-                <img src="grid-img3.jpg" alt="Ảnh lưới 3">
-                <p>Mô tả ảnh 3</p>
-            </div>
-            <div>
-                <img src="grid-img4.jpg" alt="Ảnh lưới 4">
-                <p>Mô tả ảnh 4</p>
-            </div>
-        </div>
+      <div class="grid-container">
+        <article class="card">
+          <h3>1. Skip Link</h3>
+          <p>Giúp người dùng sử dụng bàn phím (Tab) dễ dàng bỏ qua các menu lặp lại để đọc thẳng vào nội dung chính.</p>
+        </article>
 
-        <h2>Phần Linh hoạt (Flex Class)</h2>
-        <div class="flex">
-            <!-- Hình ảnh trong phần flex sẽ không bị ảnh hưởng bởi CSS của grid -->
-            <img src="flex-img1.jpg" alt="Ảnh flex 1">
-            <img src="flex-img2.jpg" alt="Ảnh flex 2">
-            <img src="flex-img3.jpg" alt="Ảnh flex 3">
-        </div>
-    </main>
+        <article class="card">
+          <h3>2. Flexbox layout</h3>
+          <p>Hoàn hảo để căn chỉnh các phần tử trên một trục đơn như thanh menu, phân bổ khoảng cách cực kỳ linh hoạt.</p>
+        </article>
+
+        <article class="card">
+          <h3>3. Grid Layout</h3>
+          <p>Giải pháp mạnh mẽ để quản lý bố cục đa cột và đa hàng phức tạp mà không cần dùng float hay position.</p>
+        </article>
+
+        <article class="card">
+          <h3>4. Box Model</h3>
+          <p>Kiểm soát chặt chẽ Padding, Border, Margin nhằm tạo ra khoảng trống trực quan, thoáng đãng và dễ đọc.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 WebStandard Assignment. Đạt chuẩn W3C & WCAG.</p>
+  </footer>
 
 </body>
 </html>
